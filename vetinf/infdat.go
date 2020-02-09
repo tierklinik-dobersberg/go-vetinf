@@ -4,6 +4,7 @@ import (
 	"time"
 
 	"github.com/spf13/afero"
+	"github.com/tierklinik-dobersberg/go-dbf/godbf"
 )
 
 // Infdat represents the Infdat folder of a VetInf installation.
@@ -42,4 +43,22 @@ func OpenCachedFs(root string, cacheTime time.Duration, base afero.Fs) *Infdat {
 	layer := afero.NewMemMapFs()
 	ufs := afero.NewCacheOnReadFs(base, layer, cacheTime)
 	return OpenReadonlyFs(root, ufs)
+}
+
+// CustomerDB opens the customer DBase file (vetkldat.dbf)
+func (inf *Infdat) CustomerDB() (*CustomerDB, error) {
+	content, err := afero.Afero{Fs: inf}.ReadFile("vetkldat.dbf")
+	if err != nil {
+		return nil, err
+	}
+
+	db, err := godbf.NewFromByteArray(content, "UTF-8")
+	if err != nil {
+		return nil, err
+	}
+
+	return &CustomerDB{
+		infdat: inf,
+		table:  db,
+	}, nil
 }
