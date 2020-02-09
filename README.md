@@ -9,7 +9,7 @@ This repository is based on a personal reverse engeneering effort that targets e
 
 ## Project Scope and Motivation
 
-Unfortunately the VetInf software does not provide any user-facing API which would allow integration into information systems deployed in a veterinary clinic. Although one can integrate lots of different devices and other systems (like DICOM imager or third-party analyzers) into VetInf, accessing data like customer or animal records stored by VetInf is not easily possible. This project is an on-going effort to extract specific information from a VetInf installation which I need for integration. The library is only ever tested against the VetInf version deployed at our veterinary clinic and no guarantees or warranties in what ever form are provided. See [LICENSE](./LICENSE) for more information.   
+Unfortunately the VetInf software does not provide any user-facing API which would allow integration into information systems deployed in a veterinary clinic. Although one can integrate lots of different devices and other systems (like DICOM imager or third-party analyzers) into VetInf, accessing data like customer or animal records stored by VetInf is not easily possible. This project is an on-going effort to extract specific information from a VetInf installation which I need for integration. The library is only ever tested against the VetInf version deployed at our veterinary clinic and no guarantees or warranties in what ever form are provided. See [LICENSE](./LICENSE) for more information.
 
 ## Overview
 
