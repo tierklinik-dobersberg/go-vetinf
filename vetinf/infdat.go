@@ -46,19 +46,25 @@ func OpenCachedFs(root string, cacheTime time.Duration, base afero.Fs) *Infdat {
 }
 
 // CustomerDB opens the customer DBase file (vetkldat.dbf)
-func (inf *Infdat) CustomerDB() (*CustomerDB, error) {
+func (inf *Infdat) CustomerDB(encoding string) (*CustomerDB, error) {
 	content, err := afero.Afero{Fs: inf}.ReadFile("vetkldat.dbf")
 	if err != nil {
 		return nil, err
 	}
 
-	db, err := godbf.NewFromByteArray(content, "UTF-8")
+	db, err := godbf.NewFromByteArray(content, encoding)
 	if err != nil {
 		return nil, err
 	}
 
-	return &CustomerDB{
+	customers := &CustomerDB{
 		infdat: inf,
 		table:  db,
-	}, nil
+	}
+
+	if err := customers.buildIndex(); err != nil {
+		return nil, err
+	}
+
+	return customers, nil
 }
