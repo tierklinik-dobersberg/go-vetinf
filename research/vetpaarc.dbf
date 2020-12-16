@@ -1,0 +1,17 @@
+DBF: vetpaarc.dbf
+Total Record: 26289
+=========================
+
+KNRAKT: numeric (6), usage 100.0% (26289)
+KNRALT: numeric (6), usage 100.0% (26289)
+RBETRAG: numeric (9), usage 100.0% (26289)
+RNR: numeric (6), usage 100.0% (26289)
+RDATUM: date (8), usage 100.0% (26289)
+ART: character (1), usage 100.0% (26289)
+KZ: character (1), usage 100.0% (26289)
+RJAHR: numeric (4), usage 100.0% (26289)
+ZEIT: character (8), usage 100.0% (26289)
+BON: character (1), usage 91.1% (23957)
+SDATUM: date (8), usage 1.4% (378)
+TEXT: character (20), usage 1.0% (253)
+BENUTZER: character (25), usage 100.0% (26289)

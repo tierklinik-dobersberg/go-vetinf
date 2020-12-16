@@ -1,0 +1,12 @@
+DBF: vetlbdat.dbf
+Total Record: 35957
+=========================
+
+KNR: numeric (6), usage 100.0% (35957)
+TILFDNR: numeric (6), usage 100.0% (35957)
+LFD: numeric (6), usage 100.0% (35957)
+BLOCK: character (244), usage 99.9% (35924)
+TEST: numeric (5), usage 80.7% (29004)
+ART: character (3), usage 80.3% (28866)
+ORIGINAL: character (60), usage 80.9% (29077)
+ZUONAME: character (25), usage 79.1% (28446)

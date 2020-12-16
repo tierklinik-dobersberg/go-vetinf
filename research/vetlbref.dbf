@@ -1,0 +1,13 @@
+DBF: vetlbref.dbf
+Total Record: 170
+=========================
+
+SART: character (4), usage 100.0% (170)
+DRUCK: character (1), usage 98.8% (168)
+INHALT: character (60), usage 87.1% (148)
+AUSWAHL: character (1), usage 86.5% (147)
+AUSWAHLIN: character (60), usage 30.6% (52)
+LVOR: character (1), usage 9.4% (16)
+LNACH: character (1), usage 5.9% (10)
+POSTFREST: character (30), usage 0.6% (1)
+LZIELREST: character (246), usage 3.5% (6)

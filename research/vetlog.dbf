@@ -1,0 +1,14 @@
+DBF: vetlog.dbf
+Total Record: 23
+=========================
+
+KNR: numeric (6), usage 100.0% (23)
+TILFDNR: numeric (6), usage 100.0% (23)
+USER: character (20), usage 100.0% (23)
+ART: character (3), usage 100.0% (23)
+TEXT: character (20), usage 100.0% (23)
+DATUM: character (10), usage 100.0% (23)
+UHRZEIT: character (8), usage 100.0% (23)
+COMPUTER: character (30), usage 100.0% (23)
+BN: numeric (2), usage 100.0% (23)
+BENUTZER: character (25), usage 100.0% (23)

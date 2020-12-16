@@ -1,0 +1,12 @@
+DBF: vetvlsil.dbf
+Total Record: 610
+=========================
+
+NR: numeric (8), usage 100.0% (610)
+DATETIME: character (14), usage 100.0% (610)
+KNR: numeric (6), usage 100.0% (610)
+TILFDNR: numeric (6), usage 100.0% (610)
+MARK: numeric (2), usage 100.0% (610)
+TESTS: character (200), usage 62.0% (378)
+REQNR: numeric (10), usage 100.0% (610)
+ARZTNAME: character (25), usage 100.0% (610)

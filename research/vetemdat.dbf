@@ -1,0 +1,15 @@
+DBF: vetemdat.dbf
+Total Record: 36
+=========================
+
+NR: numeric (10), usage 100.0% (36)
+TYP: character (20), usage 100.0% (36)
+DATUM: date (8), usage 100.0% (36)
+UHRZEIT: character (8), usage 100.0% (36)
+USER: character (50), usage 100.0% (36)
+KNR: numeric (6), usage 100.0% (36)
+EMAILADR: character (50), usage 100.0% (36)
+BETREFF: character (100), usage 100.0% (36)
+ANHANG: character (150), usage 100.0% (36)
+MODUL: character (30), usage 100.0% (36)
+VORLNAME: character (20), usage 100.0% (36)

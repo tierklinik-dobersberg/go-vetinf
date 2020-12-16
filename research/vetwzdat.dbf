@@ -1,0 +1,13 @@
+DBF: vetwzdat.dbf
+Total Record: 2
+=========================
+
+KNR: numeric (6), usage 50.0% (1)
+LFDNR: numeric (3), usage 50.0% (1)
+NAME: character (25), usage 50.0% (1)
+VORNAME: character (25), usage 50.0% (1)
+STRASSE: character (30), usage 50.0% (1)
+TNAME: character (20), usage 50.0% (1)
+TILFDNR: numeric (6), usage 50.0% (1)
+TART: character (20), usage 50.0% (1)
+RASSE: character (20), usage 50.0% (1)

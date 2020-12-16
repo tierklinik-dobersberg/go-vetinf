@@ -1,0 +1,10 @@
+DBF: vetabdat.dbf
+Total Record: 10419
+=========================
+
+KNR: numeric (6), usage 100.0% (10414)
+BETRAG: numeric (9), usage 100.0% (10414)
+LEISTUNG: numeric (9), usage 100.0% (10414)
+MEDIKAMENT: numeric (9), usage 100.0% (10414)
+ABGEGMEDI: numeric (9), usage 100.0% (10414)
+LFDBEH: character (1), usage 72.1% (7509)

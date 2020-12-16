@@ -1,0 +1,18 @@
+DBF: vetktext.dbf
+Total Record: 2126
+=========================
+
+KNR: numeric (6), usage 100.0% (2126)
+GROSSKLEIN: character (1), usage 100.0% (2126)
+TIERART: character (20), usage 100.0% (2125)
+RASSE: character (20), usage 84.3% (1793)
+GESCHLECHT: character (2), usage 93.2% (1981)
+NAME: character (20), usage 99.6% (2118)
+GEBDAT: character (10), usage 12.9% (274)
+BESONDERES: character (25), usage 0.6% (13)
+TILFDNR: numeric (6), usage 100.0% (2126)
+MEHR5: character (30), usage 100.0% (2126)
+FARBE: character (30), usage 92.9% (1975)
+EUPASS: character (12), usage 0.0% (1)
+CHIPNR: character (15), usage 1.2% (26)
+OHRM15: character (15), usage 3.8% (80)

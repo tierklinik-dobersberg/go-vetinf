@@ -1,6 +1,7 @@
 package vetinf
 
 import (
+	"context"
 	"errors"
 	"fmt"
 	"strconv"
@@ -53,6 +54,42 @@ func (db *CustomerDB) All() ([]Customer, error) {
 	}
 
 	return all, nil
+}
+
+// StreamAll streams all customers found in db.
+func (db *CustomerDB) StreamAll(ctx context.Context) (<-chan Customer, <-chan error, int) {
+	db.l.Lock()
+
+	total := db.table.NumberOfRecords()
+	customers := make(chan Customer, 10)
+	errors := make(chan error, 10)
+
+	go func() {
+		defer db.l.Unlock()
+		defer close(customers)
+		defer close(errors)
+
+		for i := 0; i < total; i++ {
+			var c Customer
+
+			if err := db.table.DecodeRow(i, &c, true); err != nil {
+				select {
+				case errors <- fmt.Errorf("row #%d: %w", i, err):
+				case <-ctx.Done():
+					return
+				}
+				continue
+			}
+
+			select {
+			case customers <- c:
+			case <-ctx.Done():
+				return
+			}
+		}
+	}()
+
+	return customers, errors, total
 }
 
 // ByID loads a customer entry by it's ID

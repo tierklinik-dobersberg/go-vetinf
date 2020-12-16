@@ -1,0 +1,12 @@
+DBF: vetdkdat.dbf
+Total Record: 325
+=========================
+
+KNR: numeric (6), usage 100.0% (325)
+TILFDNR: numeric (6), usage 100.0% (325)
+LFDNR: numeric (3), usage 100.0% (325)
+DATUM: numeric (8), usage 100.0% (325)
+TEXT: character (65), usage 91.4% (297)
+STEXT: character (30), usage 99.4% (323)
+TAG: character (2), usage 100.0% (325)
+LFDNR4: numeric (4), usage 100.0% (325)

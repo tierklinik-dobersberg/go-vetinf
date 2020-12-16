@@ -1,0 +1,41 @@
+# Research
+
+This folder contains a text file describing the DBF fields that are available in each .dbf file found in the VetInf Infdat directory that does include actual content (that is, I filtered out all DBF files with 0 total records).
+
+- [csvkldat.dbf](./csvkldat.dbf): Customer data prepared for CSV export
+- [medikat.dbf](./medikat.dbf): Various drugs and prices for buying/selling
+- [spotidat.dbf](./spotidat.dbf): Mapping from numbers to animal race names?
+- [tebassix.dbf](./tebassix.dbf): 
+- [vetabdat.dbf](./vetabdat.dbf): 
+- [vetbxdat.dbf](./vetbxdat.dbf): 
+- [vetcodat.dbf](./vetcodat.dbf): 
+- [vetdidat.dbf](./vetdidat.dbf): 
+- [vetdkdat.dbf](./vetdkdat.dbf): 
+- [vetemdat.dbf](./vetemdat.dbf): 
+- [vetftdat.dbf](./vetftdat.dbf): 
+- [vetgddat.dbf](./vetgddat.dbf): 
+- [vethidat.dbf](./vethidat.dbf): 
+- [vetimdat.dbf](./vetimdat.dbf): 
+- [vetkbdat.dbf](./vetkbdat.dbf): 
+- [vetkldat.dbf](./vetkldat.dbf): 
+- [vetklext.dbf](./vetklext.dbf): 
+- [vetktdat.dbf](./vetktdat.dbf): 
+- [vetktext.dbf](./vetktext.dbf): 
+- [vetlbdat.dbf](./vetlbdat.dbf): 
+- [vetlbref.dbf](./vetlbref.dbf): 
+- [vetledat.dbf](./vetledat.dbf): 
+- [vetlidat.dbf](./vetlidat.dbf): 
+- [vetlodat.dbf](./vetlodat.dbf): 
+- [vetlog.dbf](./vetlog.dbf): 
+- [vetlxdat.dbf](./vetlxdat.dbf): 
+- [vetmadat.dbf](./vetmadat.dbf): 
+- [vetmedat.dbf](./vetmedat.dbf): 
+- [vetopdat.dbf](./vetopdat.dbf): 
+- [vetpaarc.dbf](./vetpaarc.dbf): 
+- [vetpzdat.dbf](./vetpzdat.dbf): 
+- [vetredat.dbf](./vetredat.dbf): 
+- [vetstdat.dbf](./vetstdat.dbf): 
+- [vettidat.dbf](./vettidat.dbf): 
+- [vetvlsil.dbf](./vetvlsil.dbf): 
+- [vetwzdat.dbf](./vetwzdat.dbf): Waiting Room Management 
+- [vetzmdat.dbf](./vetzmdat.dbf): Contains records for the built-in calendar

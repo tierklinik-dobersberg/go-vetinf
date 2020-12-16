@@ -1,0 +1,19 @@
+DBF: vetbxdat.dbf
+Total Record: 1
+=========================
+
+KNR: numeric (6), usage 100.0% (1)
+TILFDNR: numeric (6), usage 100.0% (1)
+DATUM: date (8), usage 100.0% (1)
+LFD: numeric (4), usage 100.0% (1)
+KAT: numeric (4), usage 100.0% (1)
+BOXNR: numeric (3), usage 100.0% (1)
+ZEIT: character (5), usage 100.0% (1)
+ARZT: numeric (2), usage 100.0% (1)
+TEMPERATUR: numeric (4), usage 100.0% (1)
+GEWICHT: numeric (6), usage 100.0% (1)
+DAUER: numeric (3), usage 100.0% (1)
+ARZTKUERZE: character (3), usage 100.0% (1)
+GEWIWAHL: numeric (1), usage 100.0% (1)
+KLIENT: character (30), usage 100.0% (1)
+PATIENT: character (30), usage 100.0% (1)

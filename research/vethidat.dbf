@@ -1,0 +1,11 @@
+DBF: vethidat.dbf
+Total Record: 19940
+=========================
+
+KNR: numeric (6), usage 99.9% (19926)
+TILFDNR: numeric (6), usage 99.9% (19926)
+LFD: numeric (5), usage 99.9% (19926)
+FLAG: character (1), usage 99.9% (19926)
+DATUM: date (8), usage 99.9% (19926)
+ZEIT: character (5), usage 99.9% (19925)
+ZEIT2: character (8), usage 99.9% (19925)

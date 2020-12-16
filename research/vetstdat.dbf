@@ -1,0 +1,21 @@
+DBF: vetstdat.dbf
+Total Record: 368
+=========================
+
+KNR: numeric (6), usage 100.0% (368)
+NAME: character (25), usage 100.0% (368)
+VORNAME: character (25), usage 95.9% (353)
+RNR: numeric (6), usage 100.0% (368)
+RBETRAG: numeric (9), usage 100.0% (368)
+RDAT: date (8), usage 100.0% (368)
+SDAT: date (8), usage 100.0% (368)
+ART: character (1), usage 100.0% (368)
+RJAHR: numeric (4), usage 100.0% (368)
+GRUND: character (40), usage 100.0% (368)
+PDF: character (50), usage 100.0% (368)
+WER: character (50), usage 100.0% (368)
+RNR2: numeric (6), usage 100.0% (368)
+BENU: character (2), usage 100.0% (368)
+BENUTZER: character (25), usage 100.0% (368)
+KASSE: numeric (2), usage 100.0% (368)
+ZAHLART: character (1), usage 54.3% (200)

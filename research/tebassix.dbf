@@ -1,0 +1,20 @@
+DBF: tebassix.dbf
+Total Record: 50
+=========================
+
+LFD: numeric (5), usage 100.0% (50)
+ANREDE: character (30), usage 88.0% (44)
+VORNAME: character (30), usage 96.0% (48)
+NAME: character (30), usage 100.0% (50)
+STRASSE: character (30), usage 94.0% (47)
+PLZ: character (10), usage 100.0% (50)
+ORT: character (50), usage 100.0% (50)
+KUNDENNR: numeric (6), usage 100.0% (50)
+RECHDAT: date (8), usage 100.0% (50)
+RECHNR: numeric (6), usage 100.0% (50)
+RECHJAHR: numeric (4), usage 100.0% (50)
+BRUTTO: numeric (10), usage 100.0% (50)
+TELEFON: character (30), usage 90.0% (45)
+MOBIL: character (15), usage 10.0% (5)
+EMAIL: character (45), usage 22.0% (11)
+MAHNBETRAG: numeric (5), usage 100.0% (50)

@@ -1,0 +1,10 @@
+DBF: vetlidat.dbf
+Total Record: 78
+=========================
+
+LINR: numeric (4), usage 100.0% (78)
+FIRMA: character (25), usage 100.0% (78)
+PLZ: numeric (5), usage 100.0% (78)
+TELEFON: character (25), usage 92.3% (72)
+LIGRUPPE: numeric (2), usage 100.0% (78)
+AENDDATUM: date (8), usage 100.0% (78)

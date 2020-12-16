@@ -1,0 +1,18 @@
+DBF: vetgddat.dbf
+Total Record: 67183
+=========================
+
+KNR: numeric (6), usage 100.0% (67173)
+TILFDNR: numeric (6), usage 100.0% (67173)
+LDAT: numeric (8), usage 100.0% (67173)
+LFD: numeric (3), usage 100.0% (67173)
+SATZLFD: numeric (2), usage 100.0% (67173)
+SATZ: numeric (4), usage 100.0% (67173)
+INHALT: character (50), usage 94.0% (63169)
+ANTWORT: character (1), usage 95.4% (64098)
+DATEI: character (14), usage 95.4% (64098)
+SATZL: character (3), usage 100.0% (67173)
+KNR1: numeric (6), usage 100.0% (67173)
+TILFDNR1: numeric (6), usage 100.0% (67173)
+ID3000: numeric (12), usage 100.0% (67173)
+VOR1804: character (1), usage 15.1% (10152)

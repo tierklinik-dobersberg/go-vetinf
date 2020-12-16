@@ -1,0 +1,20 @@
+DBF: medikat.dbf
+Total Record: 18824
+=========================
+
+MNR: numeric (5), usage 100.0% (18824)
+KATKEY: character (16), usage 100.0% (18824)
+BEZ: character (25), usage 100.0% (18824)
+BEZRE1: character (30), usage 100.0% (18824)
+BEZRE2: character (30), usage 8.5% (1606)
+LIEFER: character (25), usage 100.0% (18824)
+EK: numeric (9), usage 100.0% (18824)
+VK: numeric (9), usage 100.0% (18824)
+VKEMPF: numeric (9), usage 100.0% (18824)
+MWSTKZ: numeric (1), usage 100.0% (18824)
+VPANZ: numeric (8), usage 100.0% (18824)
+VPANZFAK: numeric (3), usage 100.0% (18824)
+VPEINH: character (3), usage 100.0% (18824)
+ARTNR: character (20), usage 100.0% (18824)
+WEGFALL: date (8), usage 100.0% (18824)
+URSPRUNG: character (30), usage 98.9% (18614)

@@ -1,0 +1,20 @@
+DBF: vetmadat.dbf
+Total Record: 161
+=========================
+
+KNR: numeric (6), usage 100.0% (161)
+NAME: character (25), usage 100.0% (161)
+RBETRAG: numeric (9), usage 100.0% (161)
+RNR: numeric (6), usage 100.0% (161)
+MAHNSTUFE: numeric (1), usage 100.0% (161)
+MAHNBETRAG: numeric (5), usage 100.0% (161)
+MDATUM: date (8), usage 100.0% (161)
+RDATUM: date (8), usage 100.0% (161)
+SDATUM: date (8), usage 40.4% (65)
+ART: character (1), usage 100.0% (161)
+REST: numeric (8), usage 100.0% (161)
+MAHNJA: character (1), usage 100.0% (161)
+FIBFLAG: character (1), usage 100.0% (161)
+DUMMYA: character (10), usage 40.4% (65)
+DUMMYN: numeric (1), usage 100.0% (161)
+RJAHR: numeric (4), usage 100.0% (161)

@@ -1,0 +1,7 @@
+DBF: vetpzdat.dbf
+Total Record: 1026
+=========================
+
+POSTLTZAHL: numeric (5), usage 100.0% (1026)
+ORT: character (25), usage 98.7% (1013)
+PLZR: character (15), usage 1.9% (20)

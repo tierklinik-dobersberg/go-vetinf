@@ -1,0 +1,16 @@
+DBF: vetimdat.dbf
+Total Record: 18354
+=========================
+
+KNR: numeric (6), usage 99.8% (18321)
+ZEIT: date (8), usage 99.8% (18321)
+TILFDNR: numeric (6), usage 99.8% (18321)
+LEINR: numeric (6), usage 99.8% (18321)
+WZEIT: date (8), usage 99.8% (18321)
+WJN: character (1), usage 99.8% (18321)
+LFDNR: numeric (2), usage 99.8% (18321)
+LDAT: numeric (8), usage 99.8% (18321)
+ZAEHLER: numeric (4), usage 99.8% (18321)
+GESCHR: character (1), usage 39.6% (7271)
+ANZ: numeric (2), usage 99.8% (18321)
+ARZT: numeric (1), usage 99.8% (18321)

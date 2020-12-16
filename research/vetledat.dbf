@@ -1,0 +1,22 @@
+DBF: vetledat.dbf
+Total Record: 660
+=========================
+
+LNR: numeric (6), usage 100.0% (660)
+KUBEZ: character (25), usage 100.0% (660)
+BEZ: character (30), usage 99.5% (657)
+BEZ2: character (30), usage 1.4% (9)
+LGRUPPE: numeric (2), usage 100.0% (660)
+PREIS: numeric (9), usage 100.0% (660)
+MWST_CODE: numeric (1), usage 100.0% (660)
+IMPFUNG: character (1), usage 9.4% (62)
+Z1: numeric (2), usage 100.0% (660)
+Z2: numeric (2), usage 100.0% (660)
+Z3: numeric (2), usage 100.0% (660)
+Z4: numeric (2), usage 100.0% (660)
+T1: numeric (4), usage 73.8% (487)
+T2: numeric (4), usage 73.8% (487)
+T3: numeric (4), usage 73.8% (487)
+T4: numeric (4), usage 73.8% (487)
+T5: numeric (4), usage 73.8% (487)
+LOOP: character (1), usage 3.3% (22)

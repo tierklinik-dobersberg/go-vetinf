@@ -1,0 +1,15 @@
+DBF: vetlxdat.dbf
+Total Record: 5293
+=========================
+
+TIMEKEY: character (8), usage 100.0% (5293)
+DATUM: character (30), usage 100.0% (5293)
+BETREFF: character (50), usage 100.0% (5293)
+FILENAME: character (50), usage 100.0% (5293)
+LFDLX: numeric (3), usage 100.0% (5293)
+OFILENAME: character (50), usage 100.0% (5293)
+KNR: numeric (6), usage 100.0% (5293)
+TILFDNR: numeric (6), usage 100.0% (5293)
+TEST: numeric (5), usage 100.0% (5293)
+LFD: numeric (6), usage 100.0% (5293)
+FROM: character (30), usage 100.0% (5293)
