@@ -8,4 +8,3 @@ require (
 	github.com/tierklinik-dobersberg/go-dbf v0.0.0-20191212083729-eafe6d2babaf
 )
 
-replace github.com/tierklinik-dobersberg/go-dbf => ../go-dbf
