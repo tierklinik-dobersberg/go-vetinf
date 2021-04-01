@@ -43,6 +43,7 @@ func getRootCommand() *cobra.Command {
 
 	cmd.AddCommand(
 		getAnalyzeCommand(),
+		getToJSONCOmmand(),
 	)
 
 	return cmd

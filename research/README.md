@@ -19,8 +19,8 @@ This folder contains a text file describing the DBF fields that are available in
 - [vetkbdat.dbf](./vetkbdat.dbf): 
 - [vetkldat.dbf](./vetkldat.dbf): 
 - [vetklext.dbf](./vetklext.dbf): 
-- [vetktdat.dbf](./vetktdat.dbf): 
-- [vetktext.dbf](./vetktext.dbf): 
+- [vetktdat.dbf](./vetktdat.dbf): Records for small animals
+- [vetktext.dbf](./vetktext.dbf): Extended recoreds for small animals ?
 - [vetlbdat.dbf](./vetlbdat.dbf): 
 - [vetlbref.dbf](./vetlbref.dbf): 
 - [vetledat.dbf](./vetledat.dbf): 
@@ -33,7 +33,7 @@ This folder contains a text file describing the DBF fields that are available in
 - [vetopdat.dbf](./vetopdat.dbf): 
 - [vetpaarc.dbf](./vetpaarc.dbf): 
 - [vetpzdat.dbf](./vetpzdat.dbf): 
-- [vetredat.dbf](./vetredat.dbf): 
+- [vetredat.dbf](./vetredat.dbf): Billing records 
 - [vetstdat.dbf](./vetstdat.dbf): 
 - [vettidat.dbf](./vettidat.dbf): 
 - [vetvlsil.dbf](./vetvlsil.dbf): 
