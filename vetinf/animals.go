@@ -15,17 +15,19 @@ type AnimalDB struct {
 	table *godbf.DbfTable
 }
 
-func (db *AnimalDB) StreamAll(ctx context.Context) (<-chan SmallAnimalRecord, <-chan error) {
+func (db *AnimalDB) StreamAll(ctx context.Context) (<-chan SmallAnimalRecord, <-chan error, int) {
 	records := make(chan SmallAnimalRecord, 10)
 	errors := make(chan error, 10)
 
 	db.l.Lock()
+	total := db.table.NumberOfRecords()
+
 	go func() {
 		defer db.l.Unlock()
 		defer close(records)
 		defer close(errors)
 
-		for i := 0; i < db.table.NumberOfRecords(); i++ {
+		for i := 0; i < total; i++ {
 			var r SmallAnimalRecord
 
 			if err := db.table.DecodeRow(i, &r, true); err != nil {
@@ -49,5 +51,5 @@ func (db *AnimalDB) StreamAll(ctx context.Context) (<-chan SmallAnimalRecord, <-
 		}
 	}()
 
-	return records, errors
+	return records, errors, total
 }
