@@ -21,15 +21,18 @@ func getToJSONCOmmand() *cobra.Command {
 		Short: "Dump DBF files as JSON",
 		Args:  cobra.MinimumNArgs(1),
 		Run: func(cmd *cobra.Command, args []string) {
+		Files:
 			for _, file := range args {
 				content, err := afero.Afero{Fs: infdat}.ReadFile(file)
 				if err != nil {
-					log.Fatal(err)
+					log.Printf("%s: %s", file, err)
+					continue Files
 				}
 
 				db, err := godbf.NewFromByteArray(content, encoding)
 				if err != nil {
-					log.Fatal(err)
+					log.Printf("%s: %s", file, err)
+					continue Files
 				}
 
 				base := filepath.Base(file)
@@ -46,7 +49,8 @@ func getToJSONCOmmand() *cobra.Command {
 
 				f, err := os.Create(target)
 				if err != nil {
-					log.Fatal(err)
+					log.Printf("%s: %s", file, err)
+					continue Files
 				}
 
 				encoder := json.NewEncoder(f)
@@ -90,7 +94,7 @@ func getToJSONCOmmand() *cobra.Command {
 							}
 
 							if err != nil {
-								log.Printf("failed to get field %s for row %d (value: %q): %s", field.Name(), rowIdx, db.FieldValue(rowIdx, fieldIdx), err)
+								log.Printf("%s: failed to get field %s for row %d (value: %q): %s", file, field.Name(), rowIdx, db.FieldValue(rowIdx, fieldIdx), err)
 								continue
 							}
 
@@ -99,7 +103,7 @@ func getToJSONCOmmand() *cobra.Command {
 					}
 
 					if err := encoder.Encode(m); err != nil {
-						log.Printf("failed to write row %d: %s", rowIdx, err)
+						log.Printf("%s: failed to write row %d: %s", file, rowIdx, err)
 					}
 				}
 
