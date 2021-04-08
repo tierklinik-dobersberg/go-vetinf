@@ -1,6 +1,9 @@
 package vetinf
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 type Meta struct {
 	Deleted bool
@@ -25,7 +28,11 @@ type Customer struct {
 	Phone2              string `dbf:"telefonx1" json:"phone2,omitempty" bson:"phone2,omitempty"`
 	Mail                string `dbf:"emailx1" json:"mail,omitempty" bson:"mail,omitempty"`
 	SecondaryID         string `dbf:"knr2" json:"secondaryId,omitempty" bson:"secondaryId,omitempty"`
-	VaccinationReminder bool   `dbf:"impfung" json:"vaccinationReminder,omitempty" bson:"vaccinationReminder,omitempty"`
+	VaccinationReminder string `dbf:"impfung" json:"vaccinationReminder,omitempty" bson:"vaccinationReminder,omitempty"`
+}
+
+func (customer Customer) WantsVaccinationReminder() bool {
+	return strings.ToLower(customer.VaccinationReminder) == "j"
 }
 
 func (c Customer) String() string {
