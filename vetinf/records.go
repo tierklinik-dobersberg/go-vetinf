@@ -8,23 +8,24 @@ type Meta struct {
 
 // Customer represents customer data stored in the vetkldat.dbf file
 type Customer struct {
-	Meta         Meta   `dbf:"-"`
-	ID           int    `dbf:"knr" json:"id,omitempty" bson:"id,omitempty"`
-	Group        string `dbf:"gruppe" json:"group,omitempty" bson:"group,omitempty"`
-	Name         string `dbf:"name" json:"name,omitempty" bson:"name:omitempty"`
-	Firstname    string `dbf:"vorname" json:"firstname,omitempty" bson:"firstname,omitempty"`
-	Titel        string `dbf:"titel" json:"title,omitempty" bson:"title,omitempty"`
-	Street       string `dbf:"strasse" json:"street,omitempty" bson:"street,omitempty"`
-	CityCode     int    `dbf:"plz" json:"cityCode,omitempty" bson:"cityCode,omitempty"`
-	City         string `dbf:"ort" json:"city,omitempty" bson:"city,omitempty"`
-	Phone        string `dbf:"telefon" json:"phone,omitempty" bson:"phone,omitempty"`
-	Extra        string `dbf:"zusatz" json:"extra,omitempty" bson:"extra,omitempty"`
-	Salutation   string `dbf:"anrede" json:"salutation,omitempty" bson:"salutation,omitempty"`
-	MobilePhone1 string `dbf:"handyx1" json:"mobilePhone1,omitempty" bson:"mobilePhone1,omitempty"`
-	MobilePhone2 string `dbf:"handyx2" json:"mobilePhone2,omitempty" bson:"mobilePhone2,omitempty"`
-	Phone2       string `dbf:"telefonx1" json:"phone2,omitempty" bson:"phone2,omitempty"`
-	Mail         string `dbf:"emailx1" json:"mail,omitempty" bson:"mail,omitempty"`
-	SecondaryID  string `dbf:"knr2" json:"secondaryId,omitempty" bson:"secondaryId,omitempty"`
+	Meta                Meta   `dbf:"-"`
+	ID                  int    `dbf:"knr" json:"id,omitempty" bson:"id,omitempty"`
+	Group               string `dbf:"gruppe" json:"group,omitempty" bson:"group,omitempty"`
+	Name                string `dbf:"name" json:"name,omitempty" bson:"name:omitempty"`
+	Firstname           string `dbf:"vorname" json:"firstname,omitempty" bson:"firstname,omitempty"`
+	Titel               string `dbf:"titel" json:"title,omitempty" bson:"title,omitempty"`
+	Street              string `dbf:"strasse" json:"street,omitempty" bson:"street,omitempty"`
+	CityCode            int    `dbf:"plz" json:"cityCode,omitempty" bson:"cityCode,omitempty"`
+	City                string `dbf:"ort" json:"city,omitempty" bson:"city,omitempty"`
+	Phone               string `dbf:"telefon" json:"phone,omitempty" bson:"phone,omitempty"`
+	Extra               string `dbf:"zusatz" json:"extra,omitempty" bson:"extra,omitempty"`
+	Salutation          string `dbf:"anrede" json:"salutation,omitempty" bson:"salutation,omitempty"`
+	MobilePhone1        string `dbf:"handyx1" json:"mobilePhone1,omitempty" bson:"mobilePhone1,omitempty"`
+	MobilePhone2        string `dbf:"handyx2" json:"mobilePhone2,omitempty" bson:"mobilePhone2,omitempty"`
+	Phone2              string `dbf:"telefonx1" json:"phone2,omitempty" bson:"phone2,omitempty"`
+	Mail                string `dbf:"emailx1" json:"mail,omitempty" bson:"mail,omitempty"`
+	SecondaryID         string `dbf:"knr2" json:"secondaryId,omitempty" bson:"secondaryId,omitempty"`
+	VaccinationReminder bool   `dbf:"impfung" json:"vaccinationReminder,omitempty" bson:"vaccinationReminder,omitempty"`
 }
 
 func (c Customer) String() string {
