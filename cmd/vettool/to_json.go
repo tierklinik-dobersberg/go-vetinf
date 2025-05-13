@@ -91,7 +91,7 @@ func getToJSONCOmmand() *cobra.Command {
 
 							if err != nil {
 								log.Printf("failed to get field %s for row %d (value: %q): %s", field.Name(), rowIdx, db.FieldValue(rowIdx, fieldIdx), err)
-								continue
+								x = db.FieldValue(rowIdx, fieldIdx)
 							}
 
 							m[strings.ToLower(field.Name())] = x
