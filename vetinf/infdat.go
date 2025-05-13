@@ -68,3 +68,21 @@ func (inf *Infdat) CustomerDB(encoding string) (*CustomerDB, error) {
 
 	return customers, nil
 }
+
+func (inf *Infdat) AnimalDB(encoding string) (*AnimalDB, error) {
+	content, err := afero.Afero{Fs: inf}.ReadFile("vetktdat.dbf")
+	if err != nil {
+		return nil, err
+	}
+
+	db, err := godbf.NewFromByteArray(content, encoding)
+	if err != nil {
+		return nil, err
+	}
+
+	animals := &AnimalDB{
+		infdat: inf,
+		table:  db,
+	}
+	return animals, nil
+}
