@@ -1,8 +1,14 @@
 package vetinf
 
 import (
+	"errors"
+	"io"
+	"log"
+	"strconv"
+	"strings"
 	"time"
 
+	"github.com/axgle/mahonia"
 	"github.com/spf13/afero"
 	"github.com/tierklinik-dobersberg/go-dbf/godbf"
 )
@@ -85,4 +91,65 @@ func (inf *Infdat) AnimalDB(encoding string) (*AnimalDB, error) {
 		table:  db,
 	}
 	return animals, nil
+}
+
+func (inf *Infdat) Vetamdat() (<-chan VetamdatRecord, error) {
+	reader, err := afero.Afero{Fs: inf}.Open("./vetamdat")
+	if err != nil {
+	}
+
+	//encoder := mahonia.NewEncoder("IBM852")
+	decoder := mahonia.NewDecoder("IBM852")
+
+	ch := make(chan VetamdatRecord, 100)
+
+	go func() {
+		for {
+			var r record
+
+			if _, err := io.ReadFull(reader, r.client[:]); err != nil {
+				if errors.Is(err, io.EOF) {
+					return
+				}
+
+				log.Println(err)
+				return
+			}
+			if _, err := io.ReadFull(reader, r.animal[:]); err != nil {
+				log.Println(err)
+				return
+			}
+			if _, err := io.ReadFull(reader, r.index[:]); err != nil {
+				log.Println(err)
+				return
+			}
+			if _, err := io.ReadFull(reader, r.data[:]); err != nil {
+				log.Println(err)
+				return
+			}
+
+			if strings.TrimSpace(string(r.index[:])) == "" {
+				log.Println("skipping empty row")
+				continue
+			}
+
+			i, err := strconv.ParseInt(strings.TrimSpace(strings.TrimPrefix(string(r.index[:]), "0")), 10, 0)
+			if err != nil {
+				log.Fatalf("failed to parse index: %x", r.index[:])
+			}
+
+			text := decoder.ConvertString(string(r.data[:]))
+
+			amr := VetamdatRecord{
+				ClientID: strings.TrimPrefix(string(r.client[:]), "0"),
+				AnimalID: strings.TrimPrefix(string(r.animal[:]), "0"),
+				Index:    int(i),
+				Data:     text,
+			}
+
+			ch <- amr
+		}
+	}()
+
+	return ch, nil
 }

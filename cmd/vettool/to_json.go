@@ -62,9 +62,12 @@ func getToJSONCOmmand() *cobra.Command {
 
 					m["_rowIndex"] = rowIdx
 					m["_file"] = base
-					if db.RowIsDeleted(rowIdx) {
-						m["_deleted"] = true
-					}
+
+					/*
+						if db.RowIsDeleted(rowIdx) {
+							m["_deleted"] = true
+						}
+					*/
 
 					for fieldIdx, field := range db.Fields() {
 						var x interface{}
